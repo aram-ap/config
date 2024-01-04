@@ -11,7 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+vim.g.mapleader = " " -- Make sure to set `mapleader`
+                      -- before lazy so your mappings are correct
+
 
 require("lazy").setup({
 	-- Telescope:
@@ -62,10 +64,17 @@ require("lazy").setup({
     {'nvim-tree/nvim-tree.lua'},
     {'kyazdani42/nvim-web-devicons'},
 
+    {'NvChad/nvim-colorizer.lua'},
     {
         'numToStr/Comment.nvim',
         lazy = false,
     },
+
+    {
+        "m4xshen/smartcolumn.nvim",
+        opts = {}
+    },
+
 
     -- lualine
     {
@@ -86,7 +95,7 @@ require("lazy").setup({
         end
     },
 
-    -- alpha-nvim 
+    -- alpha-nvim
     {
         'goolord/alpha-nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -105,6 +114,19 @@ require("lazy").setup({
 		config = function()
 			vim.cmd('colorscheme rose-pine')
 		end
-	}
+	},
+
+    {
+        'sainnhe/gruvbox-material',
+        name = 'gruvbox-material'
+    },
+    {
+        'rebelot/kanagawa.nvim',
+        name = 'kanagawa'
+    },
+    {
+        'xero/miasma.nvim',
+        name = 'miasma'
+    }
 })
 
