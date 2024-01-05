@@ -15,9 +15,7 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-require('mason').setup({
-	ensure_installed = {}
-})
+require('mason').setup()
 require('mason-lspconfig').setup({
   ensure_installed = {'arduino_language_server',
   			'bashls',
@@ -26,7 +24,7 @@ require('mason-lspconfig').setup({
 			'cssls',
 			'gradle_ls',
 			'html',
-			'java_language_server',
+			'jdtls',
 			'jsonls',
 			'lua_ls',
 			'pyright',
