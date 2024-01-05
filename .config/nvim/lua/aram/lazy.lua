@@ -50,14 +50,19 @@ require("lazy").setup({
 	{'hrsh7th/cmp-buffer'},
 	{'hrsh7th/cmp-path'},
 
-	-- Snippets
-	{'L3MON4D3/LuaSnip'},
-	{'rafamadriz/friendly-snippets'},
-
-	{'folke/zen-mode.nvim'},
-    {'zbirenbaum/copilot.lua'},
-	{'eandrju/cellular-automaton.nvim'},
-	{'laytan/cloak.nvim'},
+    -- Snippets
+    {'L3MON4D3/LuaSnip'},
+    {'rafamadriz/friendly-snippets'},
+    {"zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        event = "InsertEnter",
+        config = function()
+            require("copilot").setup({})
+        end
+    },
+    {'folke/zen-mode.nvim'},
+    {'eandrju/cellular-automaton.nvim'},
+    {'laytan/cloak.nvim'},
     {'theprimeagen/refactoring.nvim'},
     {'mg979/vim-visual-multi'},
 
