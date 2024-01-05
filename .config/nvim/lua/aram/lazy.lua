@@ -55,7 +55,7 @@ require("lazy").setup({
 	{'rafamadriz/friendly-snippets'},
 
 	{'folke/zen-mode.nvim'},
-	{'github/copilot.vim'},
+    {'zbirenbaum/copilot.lua'},
 	{'eandrju/cellular-automaton.nvim'},
 	{'laytan/cloak.nvim'},
     {'theprimeagen/refactoring.nvim'},
