@@ -68,6 +68,8 @@ require("lazy").setup({
 
     {'nvim-tree/nvim-tree.lua'},
     {'kyazdani42/nvim-web-devicons'},
+    {'nvim-tree/nvim-tree.lua'},
+    {'nvim-tree/nvim-web-devicons'},
 
     {'NvChad/nvim-colorizer.lua'},
     {
