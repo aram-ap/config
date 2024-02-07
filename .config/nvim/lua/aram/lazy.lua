@@ -43,6 +43,9 @@ require("lazy").setup({
 	{'williamboman/mason-lspconfig.nvim'},
 	{'mfussenegger/nvim-jdtls'},
 
+    {'mfussenegger/nvim-dap'},
+    {'mfussenegger/nvim-dap-ui'},
+
 	-- Autocompletion
 	{'hrsh7th/nvim-cmp'},
 	{'hrsh7th/cmp-nvim-lsp'},
