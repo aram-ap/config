@@ -117,6 +117,11 @@ require("lazy").setup({
     -- netrw.nvim
     {'prichrd/netrw.nvim'},
 
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    },
 -- COLORSCHEMES --
 	{
 		'rose-pine/neovim',
